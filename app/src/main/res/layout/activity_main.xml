@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- GridLayout to hold the images, titles, and ratings -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1">
+
+
+            <ImageView
+                android:id="@+id/swinburne"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/swinburne"/>
+
+            <TextView
+                android:id="@+id/title_swin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/swinburne"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1">
+
+            <ImageView
+                android:id="@+id/auburn_hotel"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/auburn_hotel"/>
+
+            <TextView
+                android:id="@+id/title_auburn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auburn_hotel"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1">
+
+            <ImageView
+                android:id="@+id/rocket_park"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rocket_park"/>
+
+            <TextView
+                android:id="@+id/title_rocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rocket_park"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1">
+
+            <ImageView
+                android:id="@+id/rathmines_reserve"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rathmines_reserve"/>
+
+            <TextView
+                android:id="@+id/title_rathmines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rathmines_reserve"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+</GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
